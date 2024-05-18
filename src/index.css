@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navitem{
+  border:solid 0.4px rgba(125, 123, 123, 0.356);
+}
+
+
+.b1{
+  border-top-right-radius: 10px;
+  border-top-left-radius:10px;
+
+}
+
+@font-face {
+  font-family: vishal;
+  src: url('./assets/f2.ttf');
+}
+
+*{
+  font-family: vishal;
+}
+
+.navitem::after{
+  transition:all cubic-bezier(0.19, 1, 0.22, 1) 0.5s;
+}
+
+ ::-webkit-scrollbar{
+  display: none;
+} 
+
+.img{
+  background-position: center;
+}
+
+/* //////responsive css */
+@media (min-width: 1200px) and (max-width: 1300px) {
+  .workergrid {
+     grid-template-columns: repeat(4,1fr);
+     display: grid;
+  }
+ 
+}
+
+@media (min-width: 1000px) and (max-width: 1300px) {
+  .searchmackbool{
+    margin-right: 10%;
+  }
+  .usertxt{
+    margin-top: 3%;
+  }
+  
+  .productgrid{
+    grid-template-columns: repeat(4,1fr);
+    display: grid;
+    
+   }
+   .productcard{
+    width:240px
+   }
+}
+
+
+
+@media (min-width: 1300px) and (max-width: 2000px) {
+  .workergrid {
+     grid-template-columns: repeat(5,1fr);
+     display: grid;
+  }
+  .productgrid{
+    grid-template-columns: repeat(5,1fr);
+  }
+ 
+}
+
+@media (min-width: 900px) and (max-width: 1200px) {
+  .workergrid {
+     grid-template-columns: repeat(3,1fr);
+     display: grid;
+    
+  }
+ 
+}
+
+
+@media (min-width: 550px) and (max-width: 900px) {
+
+  .workergrid {
+     grid-template-columns: repeat(3,1fr);
+     display: grid;
+     margin-left: 10%;
+  }
+  .usertxt{
+    margin-top: 6%;
+    margin-left: 10%;
+  }
+  .usersbox{
+    margin-right: 4%;
+    margin-top: 6%;
+  }
+  .workertitle{
+    margin-top: 4%;
+    margin-left: 7%;
+  }
+  .hometitle{
+    margin-top:6%;
+  }
+  .wforpad{
+    width:30vw;
+  }
+  .navgrid{
+    width: 6vw;
+    height: 6vw;
+  }
+
+   .searchicon{
+    margin-left: 13%;
+    font:800
+   }
+
+   .productgrid{
+    grid-template-columns: repeat(3,1fr);
+    display: grid;
+   }
+}
+
+@media (min-width: 0px) and (max-width: 1000px) {
+   
+  
+  .mht {
+    margin-left: 0;
+  }
+  .respw{
+    width:100vw;
+  }
+  .doeji{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 500px) {
+
+   .doeji{
+    grid-template-columns: repeat(1,1fr);
+   }
+
+   .searchbar{
+     margin-left: 5%;
+   }
+   .searchicon{
+    margin-left: 5%;
+   }
+   .linegraph{
+    grid-column-start: 1;
+    grid-column-end: 4;
+   }
+   .bargraph{
+    grid-column-start: 1;
+    grid-column-end: 4;
+   }
+   .smtxt{
+    font-size: 12px;
+   }
+   .smfc{
+    flex-direction: column;
+   }
+   .smtc{
+    text-align: center;
+   }
+   .sidebar{
+    width:60vw;
+    
+   }
+   .navgrid{
+    width: 14vw;
+    height: 14vw;
+   }
+   .searchbar{
+    margin-left: 20%;
+   }
+   .searchmackbool{
+    width: 200px;
+    margin-right: 3rem;
+   }
+   .usertxt{
+    margin-left: 20%;
+   }
+   .ei0j0-32e{
+    margin-top: 5%;
+   }
+   .dq03-0943{
+    margin-left: 8%;
+   }
+   .worker320ij{
+    margin-top: 5%;
+    margin-left: 15%;
+   }
+   .worker320ij input{
+    width: 210px;
+   }
+  .wortxt{
+    margin-left: 10%;
+    margin-top: 10%;
+  }
+  .worksearchicon{
+    margin-left: 6%;
+  }
+  .workergrid{
+    margin-left: 13%;
+  }
+  .productgrid{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .productcard{
+    width: 100%;
+  }
+  .producttxt{
+    margin-left: 60%;
+    margin-top: 7%;
+  }
+}
+
+.gellytrans{
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+
+}
+
+.sidebar{
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
